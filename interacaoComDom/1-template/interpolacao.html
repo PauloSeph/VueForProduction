@@ -1,0 +1,24 @@
+<script src="./vue.min.js"></script>
+
+
+<div id="app">
+    <!-- Quando estou usando o vezes *, ele não executa expressão até ser contador > 10 -->
+    <p>{{contador * 2}}</p>
+    <p>{{contador }}</p>
+    <p>{{contador > 10 ? 'Maior do que 10' : 'menor do que 10'}}</p>
+    <button v-on:click = "somar">Soma</button>
+</div>
+
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            contador: 0,
+        },
+        methods: {
+            somar() {
+                this.contador++
+            }
+        }
+    })
+</script>
