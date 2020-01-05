@@ -1,0 +1,29 @@
+    <script src="../vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p v-if="logado">Usuario logado: {{nome}}</p>
+        <p v-else>Nenhum usuario logado</p>
+        <button @click="logado =!logado"> {{logado ? 'Sair' : 'Entrar'}} </button>
+    </div>
+
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                nome: 'Morramed',
+                logado: false
+            }
+        })
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

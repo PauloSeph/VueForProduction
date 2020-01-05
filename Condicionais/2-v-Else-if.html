@@ -1,0 +1,32 @@
+<script src="../vue.min.js"></script>
+
+<body>
+    <div id="app">
+        <p v-if="logado">Usuario logado: {{nome}}</p>
+        <p v-else-if="anonimo">Navegando como anônimo</p>
+        <p v-else>Nenhum usuario logado</p>
+
+        <button @click="logado =!logado"> {{logado ? 'Sair' : 'Entrar'}} </button>
+        <input type="checkbox" v-model="anonimo">
+    </div>
+
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                nome: 'Morramed',
+                logado: false,
+                anonimo: true,
+            }
+        })
+    </script>
+
+
+
+
+
+
+
+
+</body>

@@ -1,0 +1,32 @@
+<script src="https://unpkg.com/vue"></script>
+
+  <!-- 4) Imprima o seguinte objeto (somente os valores) e
+    também crie um loop aninhado para o array:
+    {
+			id: 10,
+			nome: 'Maria',
+			notas: [7.67, 8.33, 6.98, 9.21]
+		}
+    (dica: use v-for e v-if na resolução) -->
+
+    <div id="desafio">
+ 
+  <h2>04</h2>
+  <ul>
+    <li v-for="valor in aluno">
+      <!-- Usado a negacao para pegar somente os outros valores, vai pegar os valores dos que não são arrays. -->
+      <!-- Se fosse usado Array.isArray(valor) ele so iria pegar o valor do array -->
+      <template v-if="!Array.isArray(valor)">
+        {{ valor }}
+      </template>
+      <template v-else>
+        Notas:
+        <ul>
+          <li v-for="nota in valor">{{ nota }}</li>
+        </ul>
+      </template>
+    </li>
+  </ul>
+</div>
+
+<script src="app.js"></script>

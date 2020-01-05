@@ -1,0 +1,35 @@
+<script src="../vue.min.js"></script>
+
+
+<body>
+    <div id="app">
+
+        <ul>
+            <li v-for="(cor, indice)  in cores">{{cor}} é {{indice + 1}}</li>
+        </ul>
+
+    </div>
+
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                cores: ['Vermelho', 'Verde', 'Amarelo', 'Azul'],
+                pessoas: [
+                {nome: 'Ana', idade: 26, peso: 60},
+                {nome: 'Guilherme', idade: 20, peso: 78},
+                
+                ]
+            }
+        })
+    </script>
+
+<style>
+    ul {
+        list-style: none;
+    }
+</style>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<script src="https://unpkg.com/vue"></script>
+
+
+<div id="desafio">
+  <!-- 1) Ligue o botão para alternar a exibição dos dois
+    parágrafos. Use ambos v-if e v-show e inspecione os elementos
+    para ver a diferença -->
+ 
+    <h2>01</h2>
+  <div>
+    <button @click="expressao = !expressao">Alternar</button>
+    <p v-if="expressao">Você quer me ver</p>
+    <p v-else>...ou eu</p>
+    <p v-show="expressao">Você quer me ver</p>
+    <p v-show="!expressao">...ou eu</p>
+  </div>
+
+</div>
+  
+
+<script src="app.js"></script>
