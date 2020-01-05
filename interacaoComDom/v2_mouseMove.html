@@ -1,0 +1,21 @@
+<script src="./vue.min.js"></script>
+
+<div id="app">
+    <p v-on:mousemove="atualizarXY">Mouse: {{x}} e {{y}}</p>
+</div>
+
+<script>
+    new Vue ({ 
+        el: '#app',
+        data: {
+            x: 0,
+            y: 0,
+        },
+        methods: {
+                atualizarXY(event) {
+                this.x = event.clientX
+                this.y = event.clientY
+            }
+        }
+    })
+</script>
