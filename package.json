@@ -1,0 +1,25 @@
+{
+  "name": "vuejscoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+
+    "executar": "http-server ../vuejscoder -c-1 "
+ 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PauloSeph/VueForProduction.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PauloSeph/VueForProduction/issues"
+  },
+  "homepage": "https://github.com/PauloSeph/VueForProduction#readme",
+  "dependencies": {
+    "http-server": "^0.12.0"
+  }
+}

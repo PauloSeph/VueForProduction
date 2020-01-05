@@ -1,0 +1,23 @@
+<script src="./vue.min.js"></script>
+
+<div id="app">
+    <p>{{titulo}}</p>
+    <p>{{saudacao()}}</p>
+    <a :href="link">Googleeeee</a>
+</div>
+
+<script>
+    new Vue ({
+        el: '#app',
+        data: {
+            titulo: "usandooooooo",
+            link: "http://google.com.br"
+
+        },
+        methods: {
+            saudacao() {
+                return this.titulo
+            }
+        }
+    })
+</script>

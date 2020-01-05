@@ -1,0 +1,20 @@
+<script src="./vue.min.js"></script>
+
+<div id="app">
+    <p>{{titulo}}</p>
+    <p>{{saudacao()}}</p>
+</div>
+
+<script>
+    new Vue ({
+        el: '#app',
+        data: {
+            titulo: "usandooooooo"
+        },
+        methods: {
+            saudacao() {
+                return 'Good night'
+            }
+        }
+    })
+</script>
