@@ -1,0 +1,39 @@
+#efeito {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+}
+
+.destaque {
+	background-color: red;
+	width: 200px !important;
+}
+
+.encolher {
+	background-color: royalblue;
+	width: 50px !important;
+}
+
+.perigo {
+	background-color: rebeccapurple;
+}
+
+.quadrado {
+	width: 100px;
+	height: 100px;
+}
+
+.direita {
+	float: right;
+}
+
+.barra-progresso {
+	height: 30px;
+	width: 540px;
+	border: 1px solid #333;
+}
+
+.progresso {
+	background-color: greenyellow;
+	height: 100%;
+}
