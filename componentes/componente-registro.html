@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+<script src="../vue.min.js"></script>
+
+<div id="app1">
+    <contador-zaum></contador-zaum>
+    <contador-zaum></contador-zaum>
+    <contador-zaum></contador-zaum>
+</div>
+
+<hr>
+
+<div id="app2">
+    <app-contador2></app-contador2>
+    <app-contador2></app-contador2>
+    <app-contador2></app-contador2>
+</div>
+
+<script>
+    // Local
+    const ContadorZaum = {
+        template: `
+        <div>
+            <span>{{contador}}</span>
+            <button @click="contador++">+</button>
+            <button @click="contador--">-</button>
+        </div>
+
+        `,
+        data() {
+            return {
+                contador: 0,
+            }
+        }
+    }
+
+    new Vue({
+        el: "#app1",
+        components: {
+            contadorZaum: ContadorZaum
+        }
+    })
+
+    new Vue({
+        el: "#app2",
+        components: {
+            'app-contador2': ContadorZaum
+        }
+    })
+</script>
