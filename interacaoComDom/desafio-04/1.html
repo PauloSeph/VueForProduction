@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/vue"></script>
+
+
+<div id="desafio">
+
+	<!-- 1) Iniciar a execução do efeito usando botão. 
+    O efeito deve alternadamente trocar as classes "destaque" e
+    "encolher" para cada chamada de setInteval. Use a div abaixo
+	com id "efeito" para associar as classes CSS. -->
+	<h2>#01</h2>
+	<div>
+		<button @click="iniciarEfeito">Iniciar Efeito</button>
+		<div id="efeito" :class="classe1"></div>
+	</div>
+	
+	<script src="app.js"></script>
