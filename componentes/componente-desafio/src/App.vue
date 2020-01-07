@@ -1,28 +1,27 @@
 <template>
-
   <v-app>
-    <menu-comp></menu-comp>
+    <Menu></Menu>
 
-    <toolbar-comp></toolbar-comp>
+    <Toolbar></Toolbar>
 
-    <carrocel-comp></carrocel-comp>
+    <Carrocel></Carrocel>
 
-    <footer-comp />
+    <Footer/>
   </v-app>
 </template>
 
 <script>
-import Footer from "./Footer.vue";
-import Carrocel from "./Carrocel.vue";
-import Toolbar from "./Toolbar.vue";
-import Menu from "./Menu.vue";
+import Footer from "@/components/template/Footer.vue";
+import Carrocel from "@/components/widgets/Carrocel.vue";
+import Toolbar from "./components/template/Toolbar.vue";
+import Menu from "./components/template/Menu.vue";
 
 export default {
   components: {
-    FooterComp: Footer,
-    CarrocelComp: Carrocel,
-    ToolbarComp: Toolbar,
-    MenuComp: Menu
+    Footer,
+    Carrocel,
+    Toolbar,
+    Menu
   }
 };
 </script>
