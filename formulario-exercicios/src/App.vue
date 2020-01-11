@@ -66,6 +66,8 @@
         <hr />
         <button @click.prevent="enviar">Enviar</button>
 
+
+
         <!-- Reenderizando os valores passados nos inputs -->
       </form>
       <div class="painel" v-else>

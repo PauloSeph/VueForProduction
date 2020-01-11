@@ -2,8 +2,10 @@
 	<div id="app">
 		<h1>Diretivas (Desafio)</h1>
 		<hr>
+
 		<!-- Exercício -->
 		<!-- Escreva uma diretiva que funcione com o v-on (escute eventos) -->
+		
 		<button v-quando:click="acao">Executar</button>
 		<p 
 			v-quando:mouseenter="mouseEnter"
