@@ -60,16 +60,25 @@
           </select>
         </Rotulo>
 
+        <!-- Input personalizado -->
         <Rotulo nome="Primeira Reclamação?">
           <Escolha  v-model="escolha"/>
         </Rotulo>
+
+        <!-- Submit -->
         <hr />
         <button @click.prevent="enviar">Enviar</button>
 
 
+      <!-- testando -->
+      <hr>
+      <Escolha v-model="teste"/>
 
-        <!-- Reenderizando os valores passados nos inputs -->
       </form>
+
+      
+        <!-- Reenderizando os valores passados nos inputs -->
+      
       <div class="painel" v-else>
         <div class="cabecalho">Resultado</div>
         <!-- Resultado do tipo text - email -->
@@ -113,8 +122,10 @@
 	
         <Rotulo nome="Primeira Reclamação?">
           <span>{{escolha}}</span>
+          <span>{{teste}}</span>
         </Rotulo>
 	
+
 
       </div>
     </div>
@@ -139,6 +150,7 @@ export default {
       caracteristicas: [],
       produto: "web",
       prioridade: 1,
+      teste: 'SEILA',
       prioridades: [
         { codigo: 1, nome: "Baixa" },
         { codigo: 2, nome: "Moderada" },
