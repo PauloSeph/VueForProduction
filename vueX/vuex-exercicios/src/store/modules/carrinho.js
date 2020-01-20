@@ -15,10 +15,14 @@
         },
     },
     actions: {
-        adicionarProduto({commit}, payload) {
+        adicionarProduto: {
+            root: true,
+            handler({commit}, payload) {          
             setTimeout(() => {
                commit('adicionarProduto', payload)
             }, 1000);
         }
     }
+ }
+
  }

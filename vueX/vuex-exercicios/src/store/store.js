@@ -18,3 +18,6 @@ export default new Vuex.Store ({
     },
     modules: {carrinho, parametros}
 }) 
+
+
+    

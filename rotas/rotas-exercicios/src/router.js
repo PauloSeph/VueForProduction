@@ -40,7 +40,7 @@ const router = new Router({
             
         }
     }, {
-        path: '/usuario',
+        path: '/usuario/:id',
         // component: Usuario,
         components: {
             default: Usuario,

@@ -1,2 +1,8 @@
-export const getNome = state => state.nome
-export const getNomeCompleto = state => state.nome + state.sobrenome
+export const getNome = function (state) {
+    return state.nome
+}
+export const getNomeCompleto = function (state) {
+    return state.nome + state.sobrenome
+}
+
+
